@@ -34,7 +34,7 @@
 UnbufferedSerial pc (USBTX, USBRX, 115200);
 I2C lis3dh_i2c (D0, D1); // (I2C_SDA, I2C_SCL)
 
-/* Sampling: 400 Hz, Sensitivity: 2G */
+/* Sampling: 1600 Hz, Sensitivity: 4G */
 LIS3DH lis3dh (lis3dh_i2c, LIS3DH_G_CHIP_ADDR, LIS3DH_DR_LP_1R6KHZ, LIS3DH_FS_4G);
 
 /********************** Prototypes **********************/
